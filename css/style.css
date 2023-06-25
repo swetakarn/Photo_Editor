@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  place-items: center;
+  display: grid;
+}
+.container {
+  width: 35%;
+  height: auto;
+  padding: 10px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.container h1 {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+.view_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  overflow: hidden;
+}
+.disabled .view_img{
+pointer-events: none;
+opacity: .5;
+}
+.view_img img {
+  width: 400px;
+  height: 340px;
+  object-fit: contain;
+}
+
+.small_icon {
+  width: 20px;
+}
+
+.choose_img {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.choose_img button {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  background-color: rgb(221, 185, 118);
+  border-radius: 4px;
+  color: #000000;
+  cursor: pointer;
+}
+.choose_img button img {
+  width: 20px;
+  margin-left: 3px;
+}
+.slider {
+  width: 100%;
+  position: relative;
+  padding: 0 10px;
+}
+.disabled .slider{
+  pointer-events: none;
+  opacity: .5;
+  }
+.slider input[type="range"] {
+  width: 100%;
+}
+.slider .filter_info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.icons_filters {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 3px;
+}
+.disabled .icons_filters{
+  pointer-events: none;
+  opacity: .5;
+  }
+.icons_filters p {
+  margin-bottom: 3px;
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+.icons_filters .icons_rooms {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icons_filters .icons_rooms button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.icons_rooms button img {
+  width: 20px;
+}
+.active {
+  background-color: rgb(81, 163, 208) !important;
+  cursor: pointer;
+}
+.icons_rooms1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icons_filters .icons_rooms1 button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.icons_rooms1 button img {
+  width: 20px;
+}
+.icons_rooms1 button:last-child {
+  transform: rotate(90);
+}
+.btn_container {
+  width: 100%;
+  position: relative;
+  margin: 5px 0;
+}
+.disabled .btn_container{
+  pointer-events: none;
+  opacity: .5;
+  }
+.btn_container button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.btn_container button:first-child {
+  border: 1px solid rgb(0, 0, 0, 0.1);
+}
+.btn_container button:first-child:hover {
+  border: none;
+  background-color: rgb(47, 47, 158);
+  color: #ffffff;
+}
+.btn_container button:last-child {
+  background-color: rgb(65, 130, 65);
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 70%;
+  }
+}
